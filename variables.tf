@@ -15,10 +15,12 @@ variable "destination_org" {
 
 variable "gh_token" {
   description = "Github token with permissions to create and delete repos."
+  default = "TOKEN"
 }
 
 variable "slack_hook_url" {
   description = "The Slack webhook URL for publishing messages."
+  default = "optional"
 }
 
 variable "waypoint_application" {
